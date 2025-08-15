@@ -30,9 +30,10 @@ Goal → Stage → Deliverable
 - Train and evaluate recognition model → Modeling (Stage 03) → Trained model with metrics report
 
 ## Repo Plan
-- **/data** – Stores raw and cleaned formula images with corresponding LaTeX labels.  
-- **/src** – Python scripts for data preprocessing, model training, inference, and result validation.  
-- **/notebooks** – Jupyter notebooks for exploratory analysis, prototyping, and testing.  
-- **/docs** – Project documentation, reports, and visualizations.  
+- **data** – Stores raw and cleaned formula images with corresponding LaTeX labels.  
+- **src** – Python scripts for data preprocessing, model training, inference, and result validation.  
+- **notebooks** – Jupyter notebooks for exploratory analysis, prototyping, and testing.  
+- **docs** – Project documentation, reports, and visualizations.  
 - **Cadence for updates** - updates weekly.
+
 
