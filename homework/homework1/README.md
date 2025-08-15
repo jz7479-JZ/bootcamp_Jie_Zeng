@@ -1,7 +1,3 @@
-# Project Title
-**Stage:** Problem Framing & Scoping (Stage 01)  
-**Title:** Image-to-LaTeX Conversion Tool
-
 ## Problem Statement
 In academic research, education, and technical publishing, mathematical formulas often appear in image form (scanned documents, lecture slides, handwritten notes). These images are not editable and cannot be directly processed by LaTeX-based typesetting systems. The problem is to create a reliable method for converting mathematical formulas from images into accurate LaTeX code. This would save time for researchers, educators, and students, and improve the accuracy and efficiency of producing technical documents.
 
@@ -39,3 +35,4 @@ Goal → Stage → Deliverable
 - **/notebooks** – Jupyter notebooks for exploratory analysis, prototyping, and testing.  
 - **/docs** – Project documentation, reports, and visualizations.  
 - **Cadence for updates** - updates weekly.
+
