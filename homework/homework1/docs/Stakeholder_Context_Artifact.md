@@ -1,16 +1,16 @@
-# Stakeholder Context Artifact — Image-to-LaTeX Conversion Tool
+# Stakeholder Context Artifact — Stock Technical Indicators Automation Tool
 
-## Researchers / Academics
-**Role / Interest:** Regular users of LaTeX for academic publishing; often need to extract equations from scanned papers or figures.  
-**Needs from Project:** High-accuracy LaTeX code from formula images to minimize manual typing.  
-**Deliverable / Artifact:** Bulk conversion tool with accuracy metrics and error logs.
+## Individual Investors
+**Role:** Retail investors who rely on technical analysis for trading decisions.  
+**Needs from Project:** Quick access to accurate technical indicators without manually downloading or calculating data.  
+**Deliverable / Artifact:** Automated scripts or dashboards providing up-to-date stock indicators for selected tickers.  
 
-## Educators / Students
-**Role / Interest:** Preparing teaching materials, assignments, and reports with math content.  
-**Needs from Project:** Fast and user-friendly conversion from slides or handwritten notes to LaTeX.  
-**Deliverable / Artifact:** Single/batch conversion interface with preview function.
+## Quantitative Researchers
+**Role:** Researchers and analysts developing systematic trading strategies.  
+**Needs from Project:** Reliable and standardized indicator calculations for backtesting and strategy development.  
+**Deliverable / Artifact:** A flexible Python toolkit or notebook that fetches data and computes multiple indicators consistently.  
 
-## Publishers / Editors
-**Role / Interest:** Editing and typesetting scientific documents.  
-**Needs from Project:** Style-compliant LaTeX output with minimal corrections.  
-**Deliverable / Artifact:** Ready-to-use LaTeX files and formatting templates.
+## Investment Research Teams
+**Role:** Professional analysts and teams evaluating market trends for reports and recommendations.  
+**Needs from Project:** Efficient batch-processing of large stock lists and integration with visualization/reporting workflows.  
+**Deliverable / Artifact:** Scripts and data outputs that can be directly imported into Excel, BI tools, or reporting systems.  

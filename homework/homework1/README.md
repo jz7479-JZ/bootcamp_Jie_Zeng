@@ -1,40 +1,37 @@
-## Problem Statement
-In academic research, education, and technical publishing, mathematical formulas often appear in image form (scanned documents, lecture slides, handwritten notes). These images are not editable and cannot be directly processed by LaTeX-based typesetting systems. The problem is how to create a reliable method for converting mathematical formulas from images into accurate LaTeX code. This would save time for researchers, educators, and students, and improve the accuracy and efficiency of producing technical documents.
+## Problem Statement  
+In stock investing and quantitative research, investors rely on various technical indicators (such as moving averages, MACD, RSI, Bollinger Bands, etc.) to analyze trends and make trading decisions. Manually downloading and calculating these indicators is time-consuming and error-prone, especially when data sources are fragmented or need to be updated in real time. The goal of this project is to build an automated tool that can batch-fetch historical stock data and compute common technical indicators, helping investors and researchers conduct market analysis and strategy development more efficiently.  
 
-## Stakeholder & User
-- **Primary stakeholders:** Researchers, educators, students in STEM fields, and publishers who frequently deal with mathematical documents.  
-- **End users:** Individuals who need to quickly and accurately convert formula images into LaTeX code for papers, assignments, or presentations.  
-- **Workflow context:** Users upload or capture an image, the system processes it, and outputs LaTeX code that can be pasted into Overleaf, TeX editors, or Markdown documents.
+## Stakeholder & User  
+- **Primary stakeholders:** Individual investors, quantitative researchers, and investment research teams.  
+- **End users:** Users who need to quickly obtain, calculate, and update stock technical indicators (such as retail investors, analysts, and quantitative traders).  
+- **Workflow context:** Users only need to input stock codes and time ranges, and the system will automatically fetch market data, calculate the required technical indicators, and output results for use in Excel/Notebooks/visualization platforms.  
 
-## Useful Answer & Decision
-- **Type:** Predictive / Artifact  
-- **Metric:** Conversion accuracy (LaTeX correctness rate), processing time per formula.  
-- **Artifact:** A software tool (script, web app, or notebook) that accepts formula images and outputs LaTeX code.
+## Useful Answer & Decision  
+- **Type:** Descriptive / Artifact  
+- **Metric:** Accuracy of indicator calculations (compared with standard libraries), stability of data retrieval, and runtime efficiency.  
+- **Artifact:** A script or notebook tool that automatically fetches stock data and computes a set of common technical indicators.  
 
-## Assumptions & Constraints
-- Sufficient training data of formula images and their corresponding LaTeX.  
-- Ability to process common formats (PNG, JPG, PDF snapshots).  
-- Reasonable processing time (under 5 seconds per formula).  
-- Compliance with licensing for datasets and libraries used.
+## Assumptions & Constraints  
+- Available data sources (such as Yahoo Finance, Tushare, AkShare, etc.) can provide complete historical stock data.  
+- Technical indicators are calculated based on standard formulas and can be validated against professional software.  
+- The tool should complete tasks within a reasonable time (e.g., <5 seconds per stock).  
+- Must account for API rate limits and data source compliance.  
 
-## Known Unknowns / Risks
-- OCR model’s ability to handle complex multi-line equations.  
-- Handling handwritten vs. printed formulas.  
-- Accuracy drop for noisy or low-resolution images.  
-- Risk of LaTeX syntax errors requiring manual correction.
+## Known Unknowns / Risks  
+- Data consistency issues across different sources.  
+- APIs may have rate limits or require paid subscriptions.  
+- Data for less-traded stocks or suspended securities may be incomplete.  
+- Users may later demand more complex indicators or cross-market data support.  
 
-## Lifecycle Mapping
+## Lifecycle Mapping  
 Goal → Stage → Deliverable  
-- Build a reliable formula recognition model → Problem Framing & Scoping (Stage 01) → Scoping paragraph, repo setup, stakeholder artifact  
-- Collect and preprocess dataset → Data Collection (Stage 02) → Clean labeled dataset  
-- Train and evaluate recognition model → Modeling (Stage 03) → Trained model with metrics report
+- Establish automated data fetching and indicator calculation workflow → Problem Framing & Scoping (Stage 01) → Project scoping, README, stakeholder artifact  
+- Integrate data sources and basic indicator calculations → Data Collection (Stage 02) → Scripts and cleaned dataset  
+- Expand technical indicator library and visualization → Modeling (Stage 03) → Technical indicator analysis and visualization tool  
 
-## Repo Plan
-- **data** – Stores raw and cleaned formula images with corresponding LaTeX labels.  
-- **src** – Python scripts for data preprocessing, model training, inference, and result validation.  
-- **notebooks** – Jupyter notebooks for exploratory analysis, prototyping, and testing.  
-- **docs** – Project documentation, reports, and visualizations.  
-- **Cadence for updates** - updates weekly.
-
-
-
+## Repo Plan  
+- **data** – Stores downloaded stock historical data and computed indicators.  
+- **src** – Python scripts (data fetching, indicator calculation, API handling).  
+- **notebooks** – Jupyter notebooks (exploration, testing, demonstration of results).  
+- **docs** – Documentation and reports (project goals, technical notes, user guide).  
+- **Cadence for updates** – Weekly updates.  
